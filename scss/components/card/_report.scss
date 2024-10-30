@@ -1,0 +1,38 @@
+// One
+.reportCardOne {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 32px;
+  background-color: $threeClr;
+  border: 1px solid $twoClr;
+
+  @include md {
+    padding: 24px 15px;
+  }
+
+  .imgSec {
+    position: relative;
+    > img {
+      width: 100%;
+    }
+
+    .btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      @include md {
+        top: 10px;
+        right: 10px;
+        font-size: 0.8em;
+      }
+
+      img {
+        @include md {
+          height: 18px;
+        }
+      }
+    }
+  }
+}

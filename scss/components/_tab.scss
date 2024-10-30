@@ -1,0 +1,37 @@
+// One
+.navOne {
+  @include md {
+    flex-wrap: wrap;
+  }
+  .nav-pills {
+    @include md {
+      flex-wrap: nowrap;
+      flex-direction: row;
+      overflow-x: auto;
+    }
+
+    .nav-link {
+      color: $oneClr;
+      background-color: $threeClr;
+      border-radius: 0;
+      font-weight: 600;
+      white-space: nowrap;
+      padding: 15px;
+
+      + .nav-link {
+        border-top: 1px solid $twoClr;
+
+        @include md {
+          border-top: none;
+          border-left: 1px solid $twoClr;
+        }
+      }
+
+      &:hover,
+      &.active {
+        color: $whiteClr;
+        background-color: $primaryClr;
+      }
+    }
+  }
+}

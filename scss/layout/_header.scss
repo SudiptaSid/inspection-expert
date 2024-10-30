@@ -1,0 +1,46 @@
+// Topbar
+.topHeader {
+  padding: 10px 0;
+  background-color: $whiteClr;
+
+  .logoSec {
+    @include logo;
+  }
+
+  .contactInfo {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @include md {
+      gap: 5px;
+      justify-content: start;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: $blackClr;
+
+      &:hover {
+        color: $blackClr;
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      width: 1px;
+      height: 22px;
+      display: inline-block;
+      background-color: $blackClr;
+      opacity: 0.2;
+
+      @include md {
+        display: none;
+      }
+    }
+  }
+}

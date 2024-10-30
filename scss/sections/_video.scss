@@ -1,0 +1,14 @@
+// One
+.videoOne {
+  background: linear-gradient(
+    30deg,
+    rgba($primaryClr, 0.2) 10%,
+    rgba(225, 225, 225, 0) 25%
+  );
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+}

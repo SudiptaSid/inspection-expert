@@ -1,0 +1,104 @@
+// Footer
+.mainFooter {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  h6 {
+    color: $whiteClr;
+    margin-bottom: 15px;
+  }
+
+  .sectionTitle {
+    h4 {
+      color: $whiteClr;
+    }
+
+    p {
+      color: $threeClr;
+    }
+  }
+
+  .footerTop {
+    padding: 60px 0 32px;
+
+    @include md {
+      padding: 40px 0 24px;
+    }
+
+    .contactItem {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      > a,
+      > span {
+        color: $threeClr;
+        display: inline-flex;
+        align-items: start;
+        gap: 4px;
+
+        &:hover {
+          color: $primaryClr;
+        }
+      }
+
+      .txt {
+        color: $whiteClr;
+      }
+    }
+
+    .socialList {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      a {
+        display: inline-block;
+
+        img {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding: 20px 0;
+    border-top: 1px solid $threeClr;
+
+    @include md {
+      padding: 15px 0;
+    }
+
+    .policyList {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      @include md {
+        justify-content: center;
+      }
+
+      a {
+        display: inline-block;
+        color: $threeClr;
+
+        &:hover {
+          color: $primaryClr;
+        }
+      }
+
+      span {
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: $threeClr;
+        display: inline-block;
+      }
+    }
+
+    p {
+      color: $threeClr;
+      text-align: center;
+    }
+  }
+}

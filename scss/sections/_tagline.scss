@@ -1,0 +1,22 @@
+// One
+.taglineOne {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .sectionTitle {
+    h4 {
+      color: $whiteClr;
+
+      span {
+        display: block;
+        font-style: italic;
+      }
+    }
+  }
+
+  .centerSec {
+    border-left: 1px solid $whiteClr;
+    border-right: 1px solid $whiteClr;
+  }
+}

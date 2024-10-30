@@ -1,0 +1,106 @@
+// Form Control
+.form-group {
+  > label {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: $blackClr;
+    margin-bottom: 4px;
+
+    sup {
+      font-size: 1em;
+      top: 0;
+      color: $redClr;
+    }
+  }
+
+  .inputBox {
+    position: relative;
+    background-color: $whiteClr;
+    border-radius: 4px;
+    z-index: 4;
+
+    .form-control {
+      color: $blackClr;
+      background-color: transparent;
+      border: 1px solid $twoClr;
+      border-radius: 4px;
+      padding: 10px 15px;
+      font-size: 1em;
+      line-height: 1.6;
+      white-space: nowrap;
+      outline: none;
+      transition: var(--transition);
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+
+      &:focus {
+        border-color: $primaryClr;
+        box-shadow: 0 0 0 3px rgba($primaryClr, 0.2);
+      }
+
+      &:disabled {
+        background-color: $twoClr;
+        cursor: no-drop;
+      }
+
+      &::placeholder {
+        color: $twoClr;
+      }
+    }
+
+    em {
+      color: $oneClr;
+      position: absolute;
+      top: 50%;
+      z-index: -1;
+      transform: translateY(-50%);
+    }
+
+    &.leftIcon {
+      .form-control {
+        padding-left: 34px;
+      }
+
+      .emLeft {
+        left: 10px;
+      }
+    }
+
+    &.rightIcon {
+      .form-control {
+        padding-right: 34px;
+      }
+
+      .emRight {
+        right: 10px;
+      }
+    }
+  }
+}
+
+// Form Inline
+.form-inline {
+  position: relative;
+
+  .inputBox {
+    &.leftIcon {
+      .emLeft {
+        left: 20px;
+      }
+
+      .form-control {
+        padding: 15px 135px 15px 44px;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

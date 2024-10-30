@@ -1,0 +1,53 @@
+// One
+.serviceOne {
+  padding: 60px 0;
+  background: linear-gradient(
+    135deg,
+    rgba($primaryClr, 0.2) 10%,
+    rgba(225, 225, 225, 0) 25%
+  );
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    h3 {
+      text-transform: uppercase;
+    }
+  }
+
+  .serviceList {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    @include md {
+      gap: 32px;
+    }
+  }
+
+  .imgSec {
+    img {
+      width: 100%;
+    }
+  }
+
+  .leftSec {
+    .serviceCardOne {
+      flex-direction: row-reverse;
+
+      @include md {
+        flex-direction: row;
+      }
+
+      .content {
+        text-align: right;
+
+        @include md {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

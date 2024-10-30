@@ -1,0 +1,43 @@
+// Section Heading
+.sectionTitle {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 0;
+
+    span {
+      color: $primaryClr;
+    }
+
+    + p {
+      margin-top: 6px;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+
+    + p {
+      margin: 10px 0 0;
+    }
+
+    &.paraXl {
+      @include paraXl;
+    }
+
+    &.paraLg {
+      @include paraL;
+    }
+
+    &.paraMd {
+      @include paraM;
+    }
+  }
+
+  .btnSec {
+    margin: 24px 0 0;
+  }
+}

@@ -1,0 +1,42 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Bootstrap */
+@import "../vendors/bootstrap/scss/bootstrap";
+
+/* Mixin */
+@import "mixin/color";
+@import "mixin/breakpoint";
+@import "mixin/font";
+@import "mixin/keyframe";
+@import "mixin/others";
+
+/* Base */
+@import "reset";
+
+/* Components */
+@import "components/form/buttons";
+@import "components/form/input";
+
+@import "components/loader";
+@import "components/backToTop";
+@import "components/heading";
+@import "components/tab";
+@import "components/others";
+
+@import "components/card/service";
+@import "components/card/report";
+
+/* Layout */
+@import "layout/header";
+@import "layout/footer";
+
+/* Plugin Edits */
+@import "plugins/bootstrap";
+
+/* Section */
+@import "sections/heroBanner";
+@import "sections/video";
+@import "sections/service";
+@import "sections/tagline";
+@import "sections/report";
